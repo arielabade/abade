@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ariel Abade — Growth Analytics &amp; Marketing Data Analyst working across tracking, revenue analytics, SQL, Python, BI and AI-assisted decision support." />
+  <meta name="author" content="Ariel Abade" />
+  <meta property="og:title" content="Ariel Abade — Growth Analytics &amp; Marketing Data Analyst" />
+  <meta property="og:description" content="Tracking and analytics systems that connect customer behavior, marketing activity and revenue to better business decisions." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Ariel Abade — Growth Analytics &amp; Marketing Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260820-2" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-visual" aria-hidden="true">
+    <div class="scroll-visual__grid"></div>
+    <div class="scroll-visual__orb"></div>
+    <div class="scroll-visual__network scroll-visual__parallax scroll-visual__parallax--deep">
+      <svg viewBox="0 0 520 360" preserveAspectRatio="none">
+        <path class="network-line network-line--one" d="M28 300 C118 262 105 176 198 196 S284 294 352 206 S430 126 500 42"></path>
+        <path class="network-line network-line--two" d="M14 86 C108 40 156 130 226 110 S330 32 408 86 S464 208 518 178"></path>
+        <path class="network-line network-line--three" d="M64 352 C150 308 170 244 260 262 S356 344 468 286"></path>
+        <circle class="network-node network-node--a" cx="28" cy="300" r="4"></circle>
+        <circle class="network-node network-node--b" cx="198" cy="196" r="4"></circle>
+        <circle class="network-node network-node--c" cx="352" cy="206" r="4"></circle>
+        <circle class="network-node network-node--d" cx="500" cy="42" r="4"></circle>
+        <circle class="network-node network-node--e" cx="226" cy="110" r="4"></circle>
+        <circle class="network-node network-node--f" cx="408" cy="86" r="4"></circle>
+      </svg>
+    </div>
+    <div class="scroll-visual__dashboard scroll-visual__parallax scroll-visual__parallax--mid">
+      <div class="hud-window__top"><span>SESSION SIGNAL</span><b><i></i> LIVE</b></div>
+      <svg class="session-graph" viewBox="0 0 240 74" preserveAspectRatio="none">
+        <path class="session-graph__fill" d="M0 66 C20 58 22 50 38 54 S55 36 71 44 S88 62 105 38 S122 28 140 35 S156 15 174 22 S198 18 214 8 S230 20 240 4 V74 H0 Z"></path>
+        <path class="session-graph__line" d="M0 66 C20 58 22 50 38 54 S55 36 71 44 S88 62 105 38 S122 28 140 35 S156 15 174 22 S198 18 214 8 S230 20 240 4"></path>
+      </svg>
+      <div class="hud-window__meta"><strong>+24.8%</strong><span>event stream / 01</span></div>
+    </div>
+    <div class="scroll-visual__heatmap scroll-visual__parallax scroll-visual__parallax--fast">
+      <div class="heatmap__label">DWELL / ZONE 04</div>
+      <div class="heatmap__grid">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+    <div class="scroll-visual__route scroll-visual__parallax scroll-visual__parallax--mid">
+      <span class="route-label route-label--start">ENTRY / 01</span>
+      <span class="route-label route-label--end">CONVERSION / 07</span>
+      <svg viewBox="0 0 180 720" preserveAspectRatio="none">
+        <path class="route-line" d="M92 0 C22 118 162 186 92 286 S28 414 102 492 S146 610 76 720"></path>
+        <circle class="route-pulse" cx="92" cy="146" r="5"></circle>
+        <circle class="route-pulse route-pulse--two" cx="103" cy="492" r="5"></circle>
+      </svg>
+    </div>
+    <div class="scroll-visual__presence scroll-visual__parallax scroll-visual__parallax--fast">
+      <span class="presence-label">PRESENCE / TRACKING</span>
+      <span class="presence-zone presence-zone--one"><i></i><b></b></span>
+      <span class="presence-zone presence-zone--two"><i></i><b></b></span>
+      <span class="presence-zone presence-zone--three"><i></i><b></b></span>
+    </div>
+    <div class="scroll-visual__readout scroll-visual__parallax scroll-visual__parallax--deep">
+      <span>SCROLL / SIGNAL</span><strong data-scroll-readout>000.0</strong><small>PX / FLOW</small>
+    </div>
+  </div>
+
+  <div class="intro" id="intro" role="button" tabindex="0" aria-label="Skip intro">
+    <div class="intro__grid"></div>
+    <div class="intro__monogram">AA</div>
+    <div class="intro__copy">
+      <span>Portfolio / 2026</span>
+      <span>Click anywhere to skip</span>
+    </div>
+  </div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="Ariel Abade home">
+      <span class="brand__mark">AA</span>
+      <span class="brand__text">Ariel Abade</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <span class="nav-indicator" aria-hidden="true"></span>
+      <a href="#home">Home</a>
+      <a href="#background">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#availability">Availability</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__eyebrow reveal">
+        <span>Ariel Abade</span>
+        <span class="dot"></span>
+        <span>Aracaju, Brazil / Information Systems</span>
+      </div>
+
+      <div class="hero__title-wrap reveal">
+        <p class="hero__kicker">GROWTH ANALYTICS • MARKETING DATA • SQL • PYTHON • BI • AI</p>
+        <h1 class="hero__title"><span>ARIEL</span><span>ABADE</span></h1>
+        <p class="hero__positioning">I build tracking and analytics systems that connect customer behavior, marketing performance and revenue to better business decisions.</p>
+      </div>
+
+      <div class="hero-grid">
+        <article class="identity-card identity-card--craft reveal">
+          <div class="card-label">FROM SIGNAL TO SYSTEM</div>
+          <p>From acquisition signals to operational decisions, I turn activity into something teams can act on.</p>
+          <div class="chips">
+            <span>SQL</span><span>Python</span><span>BI</span><span>AI</span>
+          </div>
+        </article>
+
+        <article class="portrait-card reveal" aria-label="Ariel Abade monogram portrait placeholder">
+          <div class="portrait-card__orb"></div>
+          <div class="portrait-card__lines"></div>
+          <span class="portrait-card__monogram">AA</span>
+          <span class="portrait-card__caption">Replace with your portrait</span>
+        </article>
+
+        <article class="identity-card identity-card--mindset reveal">
+          <div class="card-label">WORKING PRINCIPLE</div>
+          <p>Define the event, test the system and measure the outcome before scaling the decision.</p>
+          <blockquote>“Make the signal useful.”</blockquote>
+        </article>
+
+        <article class="location-card reveal">
+          <div class="location-card__grid"></div>
+          <div class="card-label">LOCATION</div>
+          <div>
+            <h3>Aracaju, Brazil</h3>
+            <p>10.9472° S, 37.0731° W</p>
+          </div>
+          <div class="location-card__pulse" aria-hidden="true"></div>
+        </article>
+      </div>
+
+      <div class="measurement-model reveal" aria-label="Unified analytics model">
+        <div class="measurement-model__header">
+          <span class="card-label">ONE ANALYTICAL SYSTEM</span>
+          <strong>Different environments. The same logic: track behavior, structure events and improve the decision.</strong>
+        </div>
+        <div class="measurement-model__sources">
+          <div class="measurement-source">
+            <span class="measurement-source__index">01 / DIGITAL</span>
+            <h3>Web Tracking</h3>
+            <p>GA4, GTM, data layers, conversion events and digital customer journeys.</p>
+          </div>
+          <div class="measurement-source">
+            <span class="measurement-source__index">02 / PHYSICAL</span>
+            <h3>Physical Tracking</h3>
+            <p>Computer vision, movement, zones and spatial behavior converted into structured data.</p>
+          </div>
+        </div>
+        <div class="measurement-model__chain" aria-label="Track, structure, analyze, decide and measure">
+          <span>Track</span><i>→</i><span>Structure</span><i>→</i><span>Analyze</span><i>→</i><span>Understand</span><i>→</i><span>Decide</span><i>→</i><span>Act</span><i>→</i><span>Measure</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section background" id="background">
+      <div class="section-heading reveal">
+        <div><span class="section-index">02 / PROFESSIONAL EXPERIENCE</span><h2>Professional experience</h2></div>
+        <p>A chronological view of the roles, responsibilities and business contexts that shaped my work in analytics and decision systems.</p>
+      </div>
+
+      <div class="experience-shell reveal">
+        <div class="timeline" aria-label="Professional experience timeline">
+          <article class="timeline-item">
+            <time class="timeline-year" datetime="2026">2026 — NOW</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <div class="experience-company">
+                <span class="experience-logo"><span class="experience-logo__fallback">V</span></span>
+                <span class="experience-company__meta"><span class="experience-company__label">VENTURE / PHYSICAL ANALYTICS</span><span class="experience-company__name">Visppy</span></span>
+              </div>
+              <h3>Co-founder / Product &amp; Business</h3>
+              <ul class="experience-highlights">
+                <li><strong>Product strategy</strong><span>Defined the product direction and translated physical tracking opportunities into analytics concepts.</span></li>
+                <li><strong>Computer vision analytics</strong><span>Structured movement, presence and spatial behavior as measurable business signals.</span></li>
+                <li><strong>Discovery &amp; validation</strong><span>Led customer discovery, commercial validation and applied AI experimentation.</span></li>
+              </ul>
+              <div class="project-tags experience-roles"><span>Product Strategy</span><span>Computer Vision</span><span>Applied AI</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2021 — 2026</div>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <div class="experience-company">
+                <span class="experience-logo experience-logo--blocks"><span class="experience-logo__fallback">B</span><img src="https://www.blocksrvt.com/assets/blocks_logo.svg" alt="Blocks logo" loading="lazy" decoding="async" onerror="this.style.display='none'"></span>
+                <span class="experience-company__meta"><span class="experience-company__label">COMPANY / BIM PLATFORM</span><span class="experience-company__name">Blocks®</span></span>
+              </div>
+              <h3>Growth Analytics &amp; Marketing Data</h3>
+              <p class="timeline-org"><a href="https://www.blocksrvt.com/en/home" target="_blank" rel="noreferrer">Visit Blocks ↗</a></p>
+              <p class="timeline-company">Global BIM platform for architecture and interior projects.</p>
+              <div class="role-progression" aria-label="Career progression at Blocks">
+                <div><time datetime="2021">2021 — 2023</time><span>Paid Media Analyst</span></div>
+                <div><time datetime="2024">2024 — 2025</time><span>Paid Media Coordinator</span></div>
+                <div><time datetime="2025">2025 — 2026</time><span>Specialist / Conversion Analytics</span></div>
+              </div>
+              <ul class="experience-highlights">
+                <li><strong>Acquisition analytics</strong><span>Analyzed media, audience and channel performance to guide growth decisions.</span></li>
+                <li><strong>Conversion measurement</strong><span>Connected funnel behavior and conversion signals through performance dashboards.</span></li>
+                <li><strong>Decision support</strong><span>Maintained performance views that connected marketing activity to digital product growth.</span></li>
+              </ul>
+              <div class="project-tags experience-roles"><span>Growth Analytics</span><span>Conversion</span><span>Dashboards</span><span>Paid Media</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <time class="timeline-year" datetime="2022-01">JAN 2022 —<br>APR 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <div class="experience-company">
+                <span class="experience-logo experience-logo--atacama"><span class="experience-logo__fallback">A</span><img src="https://atacama.digital/icon.png?icon.1fe0dec7.png" alt="Atacama Digital logo" loading="lazy" decoding="async" onerror="this.style.display='none'"></span>
+                <span class="experience-company__meta"><span class="experience-company__label">COMPANY / DIGITAL AGENCY</span><span class="experience-company__name">Atacama Digital</span></span>
+              </div>
+              <h3>Marketing Analytics / Paid Media</h3>
+              <p class="timeline-org"><a href="https://atacama.digital/" target="_blank" rel="noreferrer">Visit Atacama Digital ↗</a></p>
+              <ul class="experience-highlights">
+                <li><strong>Paid acquisition</strong><span>Analyzed and optimized initiatives across Google Ads and Meta Ads.</span></li>
+                <li><strong>Funnel analysis</strong><span>Translated campaign, audience and conversion data into clearer customer journeys.</span></li>
+                <li><strong>Performance decisions</strong><span>Turned media signals into practical recommendations for optimization.</span></li>
+              </ul>
+              <div class="project-tags experience-roles"><span>Google Ads</span><span>Meta Ads</span><span>Funnel Analysis</span><span>Conversion</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <time class="timeline-year" datetime="2022-05">MAY 2022 —<br>MAR 2023</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <div class="experience-company">
+                <span class="experience-logo experience-logo--bg9"><span class="experience-logo__fallback">BG9</span><img src="https://scontent.cdninstagram.com/v/t51.2885-19/446976695_885435443510586_2725707299753156377_n.jpg?stp=dst-jpg_s100x100_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=bf7eb4&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40MTcuQzMifQ%3D%3D&amp;_nc_ohc=im8mU23OyKcQ7kNvwED8LLa&amp;_nc_oc=AdoXYXeQre6Kfnwdy_h6Y0wrjYx4B73Jhz1wp-ObOkkDUr4t1PwfCC8ygjmTEj63pqj9Kol0VwBQn30h69V_9nZJ&amp;_nc_zt=24&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_ss=7f500&amp;oh=00_AQGf8vSSvEdUw_hRsfu3CFpTGyLiQ-f68C5afX8pChlUvw&amp;oe=6A8BDCC8" alt="Agência BG9 logo" loading="lazy" decoding="async" onerror="this.style.display='none'"></span>
+                <span class="experience-company__meta"><span class="experience-company__label">COMPANY / ADVERTISING AGENCY</span><span class="experience-company__name">Agência BG9</span></span>
+              </div>
+              <h3>Marketing Analytics / Paid Media</h3>
+              <p class="timeline-org"><a href="https://www.instagram.com/agenciabg9/" target="_blank" rel="noreferrer">Visit Agência BG9 ↗</a></p>
+              <ul class="experience-highlights">
+                <li><strong>Media operations</strong><span>Supported campaign structure and media buying for retail and wholesale accounts.</span></li>
+                <li><strong>Audience strategy</strong><span>Analyzed targeting and campaign performance to improve delivery decisions.</span></li>
+                <li><strong>Reporting</strong><span>Organized performance data into clear views for ongoing optimization.</span></li>
+              </ul>
+              <div class="project-tags experience-roles"><span>Media Buying</span><span>Data Analysis</span><span>Retail</span><span>Performance</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">ONGOING</div>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <div class="experience-company">
+                <span class="experience-logo"><span class="experience-logo__fallback">IP</span></span>
+                <span class="experience-company__meta"><span class="experience-company__label">VENTURES / INDEPENDENT</span><span class="experience-company__name">Independent projects</span></span>
+              </div>
+              <h3>Growth, Data &amp; Decision Systems</h3>
+              <ul class="experience-highlights">
+                <li><strong>Building &amp; operation</strong><span>Created initiatives across eCommerce, services, analytics and software.</span></li>
+                <li><strong>Intelligent systems</strong><span>Explored applied AI and decision-support workflows around real business needs.</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-heading reveal">
+        <div><span class="section-index">03 / EDUCATION</span><h2>Education</h2></div>
+        <p>Academic foundations in information systems, data, analytics, artificial intelligence, software and applied research.</p>
+      </div>
+
+      <div class="education-shell reveal">
+        <article class="education-entry">
+          <span class="education-entry__index">ACADEMIC TRACK / 01</span>
+          <h3>Information Systems</h3>
+          <p>Academic focus across data, analytics, artificial intelligence, software systems and applied research.</p>
+          <div class="project-tags"><span>Data systems</span><span>Analytics</span><span>AI</span><span>Research</span></div>
+        </article>
+        <article class="education-entry">
+          <span class="education-entry__index">ACADEMIC TRACK / 02</span>
+          <h3>Research &amp; Data Analytics</h3>
+          <p>Research scholarship at the Federal University of Sergipe, covering structured data collection, analysis, scientific communication and reporting.</p>
+          <div class="project-tags"><span>Research methods</span><span>Data collection</span><span>Analysis</span><span>Scientific reporting</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-index">04 / PORTFOLIO</span>
+          <h2>Featured projects</h2>
+        </div>
+        <p>Applied work across physical tracking, customer retention, acquisition measurement and revenue analytics.</p>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card reveal" href="#contact" data-project="VISPPY">
+          <div class="project-visual visual-visppy">
+            <div class="vision-frame"></div>
+            <div class="vision-node n1"></div><div class="vision-node n2"></div><div class="vision-node n3"></div>
+            <div class="vision-path"></div>
+          </div>
+          <div class="project-meta"><span>01 — Physical Tracking &amp; Spatial Analytics</span><span>↗</span></div>
+          <h3>Visppy</h3>
+          <p>Explores how existing cameras can turn movement, occupancy, dwell time and spatial behavior into analytics-ready operational data.</p>
+          <div class="project-tags"><span>Python</span><span>YOLO</span><span>Object Tracking</span><span>Spatial Data</span></div>
+        </a>
+
+        <a class="project-card reveal" href="#contact" data-project="CHURN">
+          <div class="project-visual visual-churn">
+            <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <svg viewBox="0 0 360 180" aria-hidden="true"><path d="M10,130 C60,100 80,120 120,82 C160,45 190,94 225,62 C265,28 300,65 350,26"/></svg>
+          </div>
+          <div class="project-meta"><span>02 — Customer &amp; Retention Analytics</span><span>↗</span></div>
+          <h3>Churn Analysis &amp; Prediction</h3>
+          <p>Retention, cohorts, segmentation and predictive modeling to investigate customer risk and lifecycle behavior.</p>
+          <div class="project-tags"><span>SQL</span><span>Python</span><span>ML</span><span>BI</span></div>
+        </a>
+
+        <a class="project-card reveal" href="#contact" data-project="MARKETING">
+          <div class="project-visual visual-marketing">
+            <div class="funnel"><i></i><i></i><i></i><i></i></div>
+            <div class="metric m1">ROAS</div><div class="metric m2">CAC</div><div class="metric m3">CTR</div>
+          </div>
+          <div class="project-meta"><span>03 — Growth &amp; Marketing Analytics</span><span>↗</span></div>
+          <h3>Marketing Analytics</h3>
+          <p>Measurement architecture, acquisition analysis, attribution, funnels and performance intelligence connecting media activity with conversion signals.</p>
+          <div class="project-tags"><span>GA4</span><span>GTM</span><span>SQL</span><span>Attribution</span></div>
+        </a>
+
+        <a class="project-card reveal" href="#contact" data-project="ECOMMERCE">
+          <div class="project-visual visual-ecommerce">
+            <div class="matrix"></div>
+            <div class="basket-dot b1"></div><div class="basket-dot b2"></div><div class="basket-dot b3"></div><div class="basket-dot b4"></div>
+          </div>
+          <div class="project-meta"><span>04 — Revenue &amp; Customer Analytics</span><span>↗</span></div>
+          <h3>eCommerce Revenue Analytics</h3>
+          <p>Revenue, cohorts, LTV, repeat purchase, customer segmentation and product performance across the customer lifecycle.</p>
+          <div class="project-tags"><span>SQL</span><span>Python</span><span>Cohorts</span><span>LTV</span></div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section academic" id="academic">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-index">04A / ACADEMIC WORK</span>
+          <h2>Research in practice</h2>
+        </div>
+        <p>Three academic projects where I moved from a real question to structured evidence, reproducible analysis and a clear technical artifact.</p>
+      </div>
+
+      <div class="academic-intro reveal">
+        <div class="academic-intro__copy">
+          <span class="card-label">METHOD / EVIDENCE / COMMUNICATION</span>
+          <h3>Evidence that moves from question to decision.</h3>
+          <p>From women's health evaluation to genomic sequence classification and institutional document intelligence, each project connects domain context with structured data, analysis and a clear technical artifact.</p>
+        </div>
+        <div class="academic-stats" aria-label="Academic portfolio summary">
+          <div><strong>03</strong><span>research artifacts</span></div>
+          <div><strong>9,971</strong><span>genomic sequences</span></div>
+          <div><strong>99.8%</strong><span>best Carbon accuracy</span></div>
+        </div>
+      </div>
+
+      <div class="academic-projects">
+        <article class="academic-project academic-project--echo reveal">
+          <div class="academic-project__visual">
+            <div class="echo-signal"><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="academic-project__code">ECHO / UFS</span>
+          </div>
+          <div class="academic-project__body">
+            <div class="project-meta"><span>01 — Women's health research</span><span>Research case</span></div>
+            <h3>ECHO-UFS</h3>
+            <p>Quantitative, descriptive evaluation of a remote women's health training initiative. Work included research protocols, evaluation instruments, data organization, statistical analysis and scientific reporting.</p>
+            <div class="project-tags"><span>Research methods</span><span>Statistics</span><span>Python</span><span>Scientific communication</span></div>
+            <a class="text-link" href="https://github.com/arielabade/echo-womens-health-research-analytics" target="_blank" rel="noreferrer">Open case study <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="academic-project academic-project--carbon reveal">
+          <div class="academic-project__visual">
+            <div class="dna-helix" role="img" aria-label="Colorful DNA double helix illustration">
+              <span class="dna-rung dna-rung--1"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--2"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--3"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--4"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--5"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--6"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--7"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--8"><i></i><b></b><i></i></span>
+              <span class="dna-rung dna-rung--9"><i></i><b></b><i></i></span>
+            </div>
+            <span class="academic-project__code">CARBON / BI-LSTM</span>
+          </div>
+          <div class="academic-project__body">
+            <div class="project-meta"><span>02 — Bioinformatics &amp; deep learning</span><span>Conference paper</span></div>
+            <h3>Carbon</h3>
+            <p>Character-level sequence modeling to classify exonic and intronic regions. The ETL pipeline converts FASTA data to padded inputs and benchmarks RNN, LSTM, GRU and BI-LSTM architectures.</p>
+            <div class="project-tags"><span>TensorFlow</span><span>BI-LSTM</span><span>ETL</span><span>Bioinformatics</span></div>
+            <a class="text-link" href="https://github.com/arielabade/carbon" target="_blank" rel="noreferrer">Open repository <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="academic-project academic-project--mandacaru reveal">
+          <div class="academic-project__visual">
+            <div class="document-flow"><i>PDF</i><b></b><i>DATA</i><b></b><i>CSV</i></div>
+            <span class="academic-project__code">MANDACARU / UFS</span>
+          </div>
+          <div class="academic-project__body">
+            <div class="project-meta"><span>03 — Intelligent document processing</span><span>STI / UFS</span></div>
+            <h3>Mandacaru</h3>
+            <p>A document-processing product for higher education: validate PDFs, classify document types, extract schema-guided fields and deliver reusable CSV, XLSX or JSONL records.</p>
+            <div class="project-tags"><span>Python</span><span>Streamlit</span><span>PyMuPDF</span><span>Structured data</span></div>
+            <a class="text-link" href="https://github.com/arielabade/mandacaru" target="_blank" rel="noreferrer">Open case study <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="evidence-lab reveal">
+        <div class="evidence-lab__header">
+          <div>
+            <span class="card-label">INTERACTIVE EVIDENCE</span>
+            <h3>Follow the signal</h3>
+          </div>
+          <div class="evidence-tabs" role="tablist" aria-label="Academic project evidence">
+            <button class="evidence-tab is-active" type="button" data-evidence="echo" role="tab" aria-selected="true">ECHO</button>
+            <button class="evidence-tab" type="button" data-evidence="carbon" role="tab" aria-selected="false">CARBON</button>
+            <button class="evidence-tab" type="button" data-evidence="mandacaru" role="tab" aria-selected="false">MANDACARU</button>
+          </div>
+        </div>
+        <div class="evidence-lab__content">
+          <div class="evidence-chart" id="evidenceChart" aria-live="polite"></div>
+          <div class="evidence-note" id="evidenceNote"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <div><span class="section-index">05 / TOOLKIT</span><h2>Technical skills</h2></div>
+        <p>A capability system across growth, tracking, revenue analytics, business intelligence, AI-assisted analysis and physical behavior.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-block reveal"><span class="skill-num">A</span><h3>Growth &amp; Marketing Analytics</h3><div class="skill-list"><span>Growth Analytics</span><span>Marketing Analytics</span><span>Acquisition Analysis</span><span>Funnel Analysis</span><span>Conversion Analysis</span><span>Cohort Analysis</span></div></article>
+        <article class="skill-block reveal"><span class="skill-num">B</span><h3>Revenue Operations &amp; Analytics</h3><div class="skill-list"><span>Revenue Analytics</span><span>Revenue Performance</span><span>CAC / LTV</span><span>Customer Lifecycle</span><span>Retention</span><span>Forecasting</span></div></article>
+        <article class="skill-block reveal"><span class="skill-num">C</span><h3>Web Tracking</h3><div class="skill-list"><span>GA4</span><span>Google Tag Manager</span><span>Event Tracking</span><span>Data Layer</span><span>Conversion Tracking</span><span>Attribution</span></div></article>
+        <article class="skill-block reveal"><span class="skill-num">D</span><h3>Data &amp; Business Intelligence</h3><div class="skill-list"><span>SQL</span><span>Python</span><span>Power BI</span><span>Data Visualization</span><span>ETL</span><span>Performance Monitoring</span></div></article>
+        <article class="skill-block reveal"><span class="skill-num">E</span><h3>AI &amp; Decision Support</h3><div class="skill-list"><span>Applied Machine Learning</span><span>AI-assisted Analytics</span><span>Automation</span><span>Embeddings</span><span>RAG</span><span>Decision Support</span></div></article>
+        <article class="skill-block reveal"><span class="skill-num">F</span><h3>Physical Tracking</h3><div class="skill-list"><span>Computer Vision</span><span>Object Detection</span><span>Object Tracking</span><span>Spatial Analytics</span><span>Behavioral Events</span><span>YOLO</span></div></article>
+      </div>
+
+      <div class="ticker reveal" aria-label="Skill ticker"><div class="ticker__track">
+        <span>SQL</span><i>✦</i><span>PYTHON</span><i>✦</i><span>GA4</span><i>✦</i><span>GTM</span><i>✦</i><span>POWER BI</span><i>✦</i><span>YOLO</span><i>✦</i><span>TENSORFLOW</span><i>✦</i><span>STREAMLIT</span><i>✦</i>
+        <span>SQL</span><i>✦</i><span>PYTHON</span><i>✦</i><span>GA4</span><i>✦</i><span>GTM</span><i>✦</i><span>POWER BI</span><i>✦</i><span>YOLO</span><i>✦</i><span>TENSORFLOW</span><i>✦</i><span>STREAMLIT</span><i>✦</i>
+      </div></div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <div><span class="section-index">06 / WHAT I OFFER</span><h2>Services</h2></div>
+        <p>Focused work for teams that need clearer measurement, stronger revenue visibility and better decisions from customer or operational data.</p>
+      </div>
+      <div class="service-list">
+        <article class="service-row reveal"><span>01</span><h3>Acquire with clarity</h3><p>Diagnose channel quality, funnel friction and conversion signals so growth decisions are based on evidence.</p><b>↗</b></article>
+        <article class="service-row reveal"><span>02</span><h3>Instrument the journey</h3><p>Design reliable event schemas, data layers and measurement QA for digital customer journeys.</p><b>↗</b></article>
+        <article class="service-row reveal"><span>03</span><h3>See revenue clearly</h3><p>Connect customer, product and commercial signals into dashboards and decision-ready performance views.</p><b>↗</b></article>
+        <article class="service-row reveal"><span>04</span><h3>Make physical behavior measurable</h3><p>Translate movement, occupancy and spatial patterns into structured operational data.</p><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="section availability" id="availability">
+      <div class="availability-shell reveal">
+        <div class="availability-copy">
+          <span class="section-index">07 / SCHEDULE</span>
+          <h2>Availability</h2>
+          <p>Open to Growth Analytics, Marketing Data, Revenue Operations, BI and Data Analytics roles or projects. Pick a day and start a conversation.</p>
+          <a class="button button--light" href="#contact">Start a conversation <span>↗</span></a>
+        </div>
+        <div class="calendar" aria-label="Availability calendar">
+          <div class="calendar__header"><button id="prevMonth" aria-label="Previous month">←</button><strong id="monthLabel"></strong><button id="nextMonth" aria-label="Next month">→</button></div>
+          <div class="calendar__week"><span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span></div>
+          <div class="calendar__days" id="calendarDays"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-shell reveal">
+        <div class="contact-copy">
+          <span class="section-index">08 / CONTACT</span>
+          <h2>LET'S BUILD<br>WHAT'S NEXT.</h2>
+          <p>Have a measurement problem, a messy signal or a system waiting to become useful? Let’s talk.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button--accent" href="https://github.com/arielabade" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a class="button" href="mailto:YOUR_EMAIL_HERE">Email <span>↗</span></a>
+          <a class="button" href="#home">Back to top <span>↑</span></a>
+        </div>
+      </div>
+      <footer>
+        <span>© <span id="year"></span> Ariel Abade</span>
+        <span>Tracking systems • Decision support • Portfolio 2026</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js?v=20260820-2"></script>
+</body>
+</html>
