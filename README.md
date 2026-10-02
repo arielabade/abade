@@ -1,25 +1,72 @@
-# Ariel Abade Portfolio — aelradi.engineer-inspired build
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/header-dark.svg">
+    <img alt="Portfolio Site — a responsive one-page portfolio build" src="assets/brand/header-light.svg" width="100%">
+  </picture>
+</p>
 
-A responsive one-page portfolio inspired by the interaction model, editorial rhythm and section structure of `aelradi.engineer`, rebuilt with original code, content and graphic elements for Ariel Abade.
+<p align="center">
+  <img alt="Type: static site" src="https://img.shields.io/badge/type-static_site-5B6CFF?style=flat-square&labelColor=050505">
+  <img alt="HTML, CSS and vanilla JavaScript" src="https://img.shields.io/badge/stack-HTML_·_CSS_·_vanilla_JS-7E8791?style=flat-square&labelColor=050505">
+  <img alt="Dependencies: none" src="https://img.shields.io/badge/dependencies-none-7E8791?style=flat-square&labelColor=050505">
+</p>
 
-## Run locally
+**A one-page portfolio, built rather than templated.** Responsive, dependency-free, and written from
+scratch — the interaction model and editorial rhythm are studied from a reference, the code and
+content are original.
 
-Open `index.html` directly, or run a local server:
+---
+
+## 01 — What this is
+
+A single-page portfolio build in three files and no framework: `index.html`, `styles.css`,
+`script.js`. No build step, no bundler, no runtime dependencies.
+
+The structure, interaction model and editorial pacing are inspired by `aelradi.engineer`. The markup,
+styles, scripts, copy and graphic elements are original.
+
+---
+
+## 02 — Run locally
 
 ```bash
 python -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+Then open `http://localhost:8080`. Opening `index.html` directly also works.
 
-## Before publishing
+---
 
-1. Replace `YOUR_EMAIL_HERE` in `index.html`.
-2. Replace the monogram portrait placeholder with your own photo if desired.
-3. Point each project card to its real GitHub repository or case-study URL.
-4. Add your LinkedIn URL to the contact area if desired.
-5. Review experience dates and wording before publishing.
+## 03 — Before publishing
 
-## Deploy
+| | Step |
+| --- | --- |
+| **01** | Replace `YOUR_EMAIL_HERE` in `index.html`. |
+| **02** | Replace the monogram portrait placeholder with a photograph, if desired. |
+| **03** | Point each project card at its real repository or case-study URL. |
+| **04** | Add a LinkedIn URL to the contact area, if desired. |
+| **05** | Review experience dates and wording. |
 
-This folder is static and can be published directly to GitHub Pages, Netlify, Vercel or Cloudflare Pages.
+Steps 01 and 03 are blocking: a published page with a placeholder address and dead project links
+costs more credibility than it earns.
+
+---
+
+## 04 — Deploy
+
+The folder is static and publishes directly to GitHub Pages, Netlify, Vercel or Cloudflare Pages
+with no configuration.
+
+---
+
+## 05 — Visual direction
+
+The site currently carries the palette of its reference build. The rest of the portfolio runs on a
+single system — Carbon and Ivory surfaces, Steel for support, Cobalt as the only accent, Lato
+throughout — and aligning this page with it is a known, pending step.
+
+---
+
+<p align="center">
+  <a href="https://github.com/arielabade">Portfolio overview</a>
+</p>
