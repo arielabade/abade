@@ -61,9 +61,19 @@ with no configuration.
 
 ## 05 — Visual direction
 
-The site currently carries the palette of its reference build. The rest of the portfolio runs on a
-single system — Carbon and Ivory surfaces, Steel for support, Cobalt as the only accent, Lato
-throughout — and aligning this page with it is a known, pending step.
+The page runs on the portfolio's visual system.
+
+| Token | Hex | Role |
+| --- | --- | --- |
+| Carbon | `#050505` | Page background and deep surfaces |
+| Graphite | `#1B1C1F` | Cards and secondary surfaces |
+| Ivory | `#F6F5F0` | Primary text |
+| Steel | `#7E8791` | Metadata, labels, support |
+| Cobalt | `#5B6CFF` | The single accent |
+
+Typography is one family, **Lato**, with microcopy set in uppercase and wide tracking. Decorative
+perspective grids were replaced with diagonal hairline fields: diagonals suggest progression, and the
+system avoids futuristic grids as ornament. Layout, structure and interactions are unchanged.
 
 ---
 
